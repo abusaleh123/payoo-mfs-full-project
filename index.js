@@ -5,11 +5,11 @@ document.getElementById('Login-btn').addEventListener('click', function(event){
     const phoneNumber = getInputValueById('phone-number');
     const pinNumber = getInputValueById('pin-number');
 
-    if(pinNumber === 1234){
+    if(phoneNumber === 14789 && pinNumber === 1234){
       console.log('Processing', pinNumber);
       window.location.href = 'home.html'
     }
     else{
-        alert('wrong info')
+        alert('wrong info please try again')
     }
 })

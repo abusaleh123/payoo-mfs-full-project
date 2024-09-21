@@ -1,13 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Daisy Ui -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Daisy Ui End -->
+       <!-- Font Awesome -->
+       <script src="https://kit.fontawesome.com/57f1da92a6.js" crossorigin="anonymous"></script>
+       <!-- Font Awesome End -->
     <title>Payoo Home</title>
 </head>
-<body>
+<body class="  ">
+    <header class=" w-3/4 mx-auto  "  >
+        <section>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="">
+              </div>
+              <div>
+              <p class="text-4xl font-black">10000</p>
+              <p class="">Available Balance</p>
+            </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-warning font-bold">Log Out</a>
+            </div>
+          </div>
+          <div class="divider mt-20"></div>
+        </section>
+    </header> 
     <main>
-        <h1>Hello World</h1>
+       <section class="w-3/4 mx-auto">
+        <div>
+            <h1 class="font-black md:text-5xl text-3xl"><i class="fa-solid fa-fire text-yellow-500"></i> Welcome to payoo!</h1>
+            <p class="text-gray-400 mt-6">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        </div>
+        <section class="mt-12 grid grid-cols-3 w-3/4 mx-auto gap-12" >
+            <!-- button card -->
+             <!-- card-1 -->
+              <button id="">
+            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+                <img class="w-14" src="./images/wallet.png" alt="">
+                <h2 class="font-bold  text-xl text-gray-500 mt-2">Add Money</h2>
+            </div>
+        </button>
+             <!-- card-2 -->
+              <button id="">
+            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+                <img class="w-14" src="./images/money.png" alt="">
+                <h2 class="font-bold text-xl text-gray-500 mt-2">Cash Out</h2>
+            </div>
+        </button>
+             <!-- card-3 -->
+              <button id="">
+            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+                <img class="w-14" src="./images/money (1).png" alt="">
+                <h2 class="font-bold text-xl text-gray-500 mt-2">Transfer Money</h2>
+            </div>
+        </button>
+             <!-- card-4 -->
+              <button id="">
+            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+                <img class="w-14" src="./images/incentive.png" alt="">
+                <h2 class="font-bold text-xl text-gray-500 mt-2">Get Bonus</h2>
+            </div>
+        </button>
+             <!-- card-5 -->
+              <button id="">
+            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+                <img class="w-14" src="./images/purse.png" alt="">
+                <h2 class="font-bold text-xl text-gray-500 mt-2">Pay Bill</h2>
+            </div>
+        </button>
+             <!-- card-6 -->
+              <button id="">
+            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+                <img class="w-14" src="./images/transaction.png" alt="">
+                <h2 class="font-bold text-xl text-gray-500 mt-2">transactions</h2>
+            </div>
+        </button>
+            
+        </section>
+       </section> 
+
+
+
     </main>
+    <footer>
+
+
+
+
+
+    </footer>
+    <script src="home.js"></script>
+    <script src="shared.js"></script>
 </body>
 </html>
