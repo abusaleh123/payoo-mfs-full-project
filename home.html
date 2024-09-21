@@ -20,7 +20,7 @@
               <div class="">
               </div>
               <div>
-              <p class="text-4xl font-black">10000</p>
+              <p id="account-balance" class="text-4xl font-black">10000</p>
               <p class="">Available Balance</p>
             </div>
             </div>
@@ -40,53 +40,157 @@
             <h1 class="font-black md:text-5xl text-3xl"><i class="fa-solid fa-fire text-yellow-500"></i> Welcome to payoo!</h1>
             <p class="text-gray-400 mt-6">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
         </div>
-        <section class="mt-12 grid grid-cols-3 w-3/4 mx-auto gap-12" >
+    </section> 
+    
+        <section class="mt-12 grid md:grid-cols-3 w-3/4 mx-auto gap-12" >
             <!-- button card -->
              <!-- card-1 -->
-              <button id="">
-            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+              <button id="add-money-btn">
+            <div class="border-2 hover:bg-blue-100 hover:border-blue-400 flex items-center flex-col p-10 rounded-lg ">
                 <img class="w-14" src="./images/wallet.png" alt="">
                 <h2 class="font-bold  text-xl text-gray-500 mt-2">Add Money</h2>
             </div>
         </button>
              <!-- card-2 -->
-              <button id="">
-            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+              <button id="cash-out-btn">
+            <div class="border-2  hover:bg-blue-100 hover:border-blue-400 flex items-center flex-col p-10 rounded-lg ">
                 <img class="w-14" src="./images/money.png" alt="">
                 <h2 class="font-bold text-xl text-gray-500 mt-2">Cash Out</h2>
             </div>
         </button>
              <!-- card-3 -->
-              <button id="">
-            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+              <button id="transfer-money-btn">
+            <div class="border-2  hover:bg-blue-100 hover:border-blue-400 flex items-center flex-col p-10 rounded-lg ">
                 <img class="w-14" src="./images/money (1).png" alt="">
                 <h2 class="font-bold text-xl text-gray-500 mt-2">Transfer Money</h2>
             </div>
         </button>
              <!-- card-4 -->
               <button id="">
-            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+            <div class="border-2  hover:bg-blue-100 hover:border-blue-400 flex items-center flex-col p-10 rounded-lg ">
                 <img class="w-14" src="./images/incentive.png" alt="">
                 <h2 class="font-bold text-xl text-gray-500 mt-2">Get Bonus</h2>
             </div>
         </button>
              <!-- card-5 -->
               <button id="">
-            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+            <div class="border-2  hover:bg-blue-100 hover:border-blue-400 flex items-center flex-col p-10 rounded-lg ">
                 <img class="w-14" src="./images/purse.png" alt="">
                 <h2 class="font-bold text-xl text-gray-500 mt-2">Pay Bill</h2>
             </div>
         </button>
              <!-- card-6 -->
               <button id="">
-            <div class="border-2 flex items-center flex-col p-10 rounded-lg ">
+            <div class="border-2  hover:bg-blue-100 hover:border-blue-400 flex items-center flex-col p-10 rounded-lg ">
                 <img class="w-14" src="./images/transaction.png" alt="">
                 <h2 class="font-bold text-xl text-gray-500 mt-2">transactions</h2>
             </div>
         </button>
             
         </section>
-       </section> 
+        <section class=" flex justify-center items-center mt-10 ">
+         
+            <div id="add-money-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Select Bank </span>
+                    </label>
+                    <select name="" id="" class="border py-4 px-3 rounded-lg">
+                        <option value="Janata Bank" selected disabled >Select Bank </option>
+                        <option value="Janata Bank">Janata Bank</option>
+                        <option value="Janata Bank">Islami Bank</option>
+                        <option value="Janata Bank">Pubali Bank</option>
+                        <option value="Janata Bank">IFIC Bank</option>
+                    </select>
+                    
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Bank Account Number </span>
+                    </label>
+                    <input id="bank-account-input" type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Amount</span>
+                    </label>
+                    <input id="add-money-input" type="number" placeholder="Enter Amount to add Money" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Pin Number</span>
+                    </label>
+                    <input id="pin-number-input" type="password" placeholder="enter 4 digit pin number" class="input input-bordered" autocomplete="off" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="add-money-last-btn" class="btn btn-primary">Add Money</button>
+                  </div>
+                </form>
+              </div>
+
+        </section>
+        <section class=" flex justify-center items-center mt-10" >
+           <!-- CAsh Out Form Start -->
+           <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text font-bold">Agent Number </span>
+                </label>
+                <input id="agent-number-input" type="text" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text font-bold">Amount</span>
+                </label>
+                <input id="cash-out-input" type="number" placeholder="Enter Amount to withdraw" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text font-bold">Pin Number</span>
+                </label>
+                <input id="cash-out-pin" type="password" placeholder="enter 4 digit pin number" class="input input-bordered" autocomplete="off" required />
+              </div>
+              <div class="form-control mt-6">
+                <button id="cash-out-last-btn" class="btn btn-primary">Withdraw Money</button>
+              </div>
+            </form>
+          </div>
+           <!-- Cash Out Form End -->
+        </section>
+        <section class=" flex justify-center items-center mt-10" >
+           <!-- Transfer Money Form Start -->
+           <div id="transfer-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text font-bold">User Account Number </span>
+                </label>
+                <input id="user-account-input" type="text" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text font-bold">Amount</span>
+                </label>
+                <input id="transfer-money-input" type="number" placeholder="Enter Amount to transfer" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text font-bold">Pin Number</span>
+                </label>
+                <input id="transfer-money-pin" type="password" placeholder="enter 4 digit pin number" class="input input-bordered" autocomplete="off" required />
+              </div>
+              <div class="form-control mt-6">
+                <button id="transfer-money-last-btn" class="btn btn-primary">Send Now</button>
+              </div>
+            </form>
+          </div>
+           <!-- Transfer Money Form End -->
+        </section>
+       
+
+       
 
 
 
@@ -100,5 +204,8 @@
     </footer>
     <script src="home.js"></script>
     <script src="shared.js"></script>
+    <script src="add-money.js"></script>
+    <script src="cashout.js"></script>
+    <script src="transfer.js"></script>
 </body>
 </html>
